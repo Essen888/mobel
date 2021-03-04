@@ -196,48 +196,49 @@ export default {
 }
 // lap
 @media (max-width: 768px) {
-  .main__content {
+  .main {
+
+    padding-left: 0px;
+    padding-right: 0px;
+   padding-bottom: 0;
+
+  &__content {
     display: none;
   }
-  .main__content-pl {
+  &__content-pl {
     display: block;
     display: $f;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .main__text-pl {
+ &__text-pl {
     text-align: center;
   }
-  .main__img-1 {
+ &__img-1 {
     margin-right: 0px;
     padding-bottom: 63px;
         max-width: 100%;
   }
-  .main__img-2 {
+  &__img-2 {
     margin-left: 0px;
         max-width: 100%;
   }
-  .main__h2{
+  &__h2{
 font-weight: 500;
 line-height: 38px;
 padding-top: 96px;
 padding-bottom: 63px;
 
 }
-.main {
 
-    padding-left: 0px;
-    padding-right: 0px;
-   padding-bottom: 0;
-}
-.main__h3{
+&__h3{
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
 line-height: 38px;
 }
-.main__text-p{
+&__text-p{
   font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -246,7 +247,7 @@ max-width: 466px;
 padding-bottom: 45px;
 text-align: center;
 }
-
+  }
 }
 @media (max-width: 723px) {
   .main__h2 {
