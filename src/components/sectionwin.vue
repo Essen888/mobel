@@ -6,7 +6,10 @@
       </h4>
       <div class="section__block">
         <div class="section__block-left">
+          <picture>
           <img src="../assets/img/section_img1.webp" alt="" class="section__img" />
+          <source srcset="../assets/img/section__img2.png" media="(max-width:768px)">
+          </picture>
           <div class="section__block_text">
             <h5 class="section__h5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -85,7 +88,7 @@ export default {
      
   }
  &__img{
-     margin-right: 10px;
+     margin-right: 26px;
 
  }
  &__right-img1{
@@ -110,5 +113,53 @@ font-size: 16px;
 line-height: 30px;
 
  }
+}
+// lep
+@media(max-width:768px){
+   .section__block{
+      display: $f;
+      justify-content: $c;
+      align-items: $c;
+      flex-direction: column;
+     
+   order:3
+  }
+  .section__block-left {
+    display: $f;
+    justify-content: center;
+   align-items: $c;
+      flex-direction: column;
+       order:2;
+
+  }
+   &__block-right {
+    display: $f;
+    justify-content: center;
+    align-items: $c;
+      flex-direction: column;
+      // position: relative;
+      
+ order: 3;
+  }
+  .section__block_text {
+    display: $f;
+    flex-direction: column;
+    order: -1;
+    margin-top: 164px;
+  }
+  .section__h4{
+    font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 44px;
+letter-spacing: 0.025em;
+margin-bottom: 63px;
+  }
+  .section__right-img1 {
+    position: relative;
+    z-index: 3;
+    margin-top: -10px;
+    margin-left: 100px;
+}
 }
 </style>
