@@ -136,16 +136,18 @@
   </div>
 </template>
 <script>
-import dropdown from './dropdown'
+import Dropdown from './dropdown'
+import SchopLook from './schop-look.vue'
 import Kinderzimmer from './kinderzimmer'
-import schopLook from './schop-look'
+
 
 export default {
   name: 'Navbar',
   components: {
-    dropdown,
+    Dropdown,
+     SchopLook,
     Kinderzimmer,
-    schopLook
+   
   },
   data: () => {
     return {
@@ -156,17 +158,17 @@ export default {
 
       schopLooks: [
         {
-          imag: 'header-cart1.webp',
+          imag1: 'header-cart1.webp',
           article: 'A1',
           classes: ['cart__h']
         },
         {
-          imag: 'header-cart2.webp',
+          imag1: 'header-cart2.webp',
           article: 'A2',
           classes: ['cart__h cart2']
         },
         {
-          imag: 'header-cart3.webp',
+          imag1: 'header-cart3.webp',
           article: 'A3',
           classes: ['cart__h']
         }
@@ -181,7 +183,7 @@ export default {
         {
           imag: 'kids2.webp',
           article: 'B2',
-          classes: ['cart__h cart2']
+          classes: ['cart__hcart__h cart2']
         },
         {
           imag: 'kids3.webp',
@@ -463,6 +465,7 @@ export default {
 
 .cart__h:hover {
   transform: translateY(-20px);
+  z-index: 12;
 }
 .bg {
   background-image: url("../assets/img/bg.webp");

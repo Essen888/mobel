@@ -1,5 +1,5 @@
 <template>
-  <div id="sect">
+  <div id="sectwin">
     <section class="section">
       <h4 class="section__h4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -50,7 +50,7 @@
 </template>
 <script>
 export default {
-  name: "sect",
+  name: "sectwin",
 };
 </script>
 <style lang="scss">
@@ -123,9 +123,7 @@ export default {
   }
 }
 @media (max-width: 1330px) {
-  .section__img{
-// max-width:226px;
-  }
+ 
   .section{
     padding-right: 100px;
     padding-left: 100px;
@@ -148,6 +146,7 @@ export default {
   }
   .section__h4{
     font-size: 28px;
+
   }
   .section__h5{
     font-size: 18px;
@@ -191,7 +190,7 @@ export default {
     display: $f;
     flex-direction: column;
     order: -1;
-    margin-top: 104px;
+    margin-top: 66px;
   }
   .section__h4 {
     font-style: normal;
@@ -201,6 +200,7 @@ export default {
     letter-spacing: 0.025em;
     margin-bottom: 63px;
     text-align: center;
+    padding-top: 90px;
   }
   .section__right-img1 {
     position: absolute;
@@ -217,6 +217,12 @@ export default {
     margin-left: 0px;
      z-index: 1;
      max-width: 536px;
+  }
+  .section__h4{
+  
+margin-right: 90px;
+margin-left: 90px;
+
   }
   .section__h5{
     font-style: normal;
@@ -244,6 +250,9 @@ margin-bottom: 45px;
        padding-right: 0;
         padding-left: 0;
         width: 100%;
+  }
+  picture{
+     width: 100%;
   }
 }
 </style>
