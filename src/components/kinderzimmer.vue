@@ -1,7 +1,7 @@
 <template>
     <div id="kinderzimmer">
    
-      <img :src=" require('../assets/img/'+cart_data.imag) " alt="img"  class="cart__h" />
+      <img :src=" require('../assets/img/'+cartData.imag) " alt="img"  class="cart__h" />
     
     </div>  
 
@@ -10,7 +10,7 @@
 export default {
     name:"kinderzimmer",
     props:{
-        cart_data:{
+        cartData:{
             type:Object,
             default(){
                 return{}

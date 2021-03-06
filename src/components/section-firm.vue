@@ -2,7 +2,7 @@
   <div class="fsection">
     <h6 class="fsection__h6">Wir werden erwähnt</h6>
     <div class="fsection__firm">
-      <img src="../assets/img/Group.webp" alt="" class="fsection__img_f" />
+      <img src="../assets/img/firm-1.webp" alt="" class="fsection__img_f" />
       <img
         src="../assets/img/Rectangle 30.webp"
         alt=""

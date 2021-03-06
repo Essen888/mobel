@@ -2,11 +2,13 @@
   <div id="sectwin">
     <section class="section">
       <h4 class="section__h4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        Mobel ipsum dolor sit amet, consectetur adipiscing elit
       </h4>
       <div class="section__block">
         <div class="section__block-left">
+       <div class="pict__mob">
           <picture>
+           
             <source
               srcset="../assets/img/section__img2.png"
               media="(max-width:976px)"
@@ -19,6 +21,7 @@
               class="section__img"
             />
           </picture>
+      </div>
           <div class="section__block_text">
             <h5 class="section__h5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -44,7 +47,12 @@
             alt=""
           />
         </div>
+           <div class="sectwin__mob">
+             <img src="../assets/img/section-img1.webp" alt="" class="section__right-img-mob1">
+             <img src="../assets/img/section__img2.png" alt="" class="section__right-img-mob2">
+           </div>
       </div>
+   
     </section>
   </div>
 </template>
@@ -54,6 +62,9 @@ export default {
 };
 </script>
 <style lang="scss">
+.sectwin__mob{
+  display: none;
+}
 .section {
   display: $f;
   justify-content: $c;
@@ -181,7 +192,7 @@ export default {
     display: $f;
     justify-content: flex-end;
     align-items: flex-start;
-    // flex-direction: column;
+   
     order: 3;
 
       
@@ -189,8 +200,10 @@ export default {
   .section__block_text {
     display: $f;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     order: -1;
-    margin-top: 66px;
+    margin-top: 60px;
   }
   .section__h4 {
     font-style: normal;
@@ -198,7 +211,7 @@ export default {
     font-size: 28px;
     line-height: 44px;
     letter-spacing: 0.025em;
-    margin-bottom: 63px;
+    margin-bottom: 60px;
     text-align: center;
     padding-top: 90px;
   }
@@ -232,7 +245,7 @@ line-height: 42px;
 text-align: center;
 margin-right: 90px;
 margin-left: 90px;
-margin-bottom: 47px;
+margin-bottom: 45px;
   }
   .section__p{
     font-style: normal;
@@ -254,5 +267,66 @@ margin-bottom: 45px;
   picture{
      width: 100%;
   }
+}
+@media (max-width: 547px) {
+.section__right-img1 {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 180px;
+    z-index: 3;
+    max-width: 220px;
+}
+.section__right-img2{
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 1;
+    max-width: 336px;
+}
+.section__h4 {
+    margin-right: 60px;
+    margin-left: 60px;
+        font-size: 25px;
+    line-height: 35px;
+}
+}
+@media (max-width: 400px) {
+.section__h4{
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 162%;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+    margin-right: 17px;
+    margin-left: 17px;
+    padding-top: 40px;
+    margin-bottom: 25px;
+}
+.section__block-right{
+  display: none;
+}
+.section__right-img-mob1{
+ position:absolute ;
+    margin-top: 120px;
+right: 0px;
+    z-index: 5;
+    max-width: 50%;
+}
+.section__right-img-mob2{
+ position: relative;
+    margin-top: 0px;
+ 
+    z-index: 3;
+    max-width: 100%;
+}
+.pict__mob{
+  display: none;
+}
+.sectwin__mob{
+  display: block;
+}
 }
 </style>

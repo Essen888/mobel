@@ -1,7 +1,7 @@
 <template>
     <div id="schop-look">
    
-      <img :src="require('../assets/img/'+  schopLook_data.imag1) " alt="img"  class="cart__h" />
+      <img :src="require('../assets/img/'+  schopLookData.imag1) " alt="img"  class="cart__h" />
     
     </div>  
 
@@ -10,7 +10,7 @@
 export default {
     name:"schop-look",
     props:{
-         schopLook_data:{
+         schopLookData:{
              type:Object,
             default(){
                 return{}

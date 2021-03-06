@@ -117,7 +117,7 @@
       <schop-look
         v-for="schopLook in schopLooks"
         :key="schopLook.article"
-        :schop-look-data="schopLook"
+        :schopLookData="schopLook"
         :class="schopLook.classes"
       />
     </div>
@@ -129,7 +129,7 @@
       <kinderzimmer
         v-for="kindCart in kindCarts"
         :key="kindCart.article"
-        :cart_data="kindCart"
+        :cartData="kindCart"
         :class="kindCart.classes"
       />
     </div>
@@ -465,7 +465,7 @@ export default {
 
 .cart__h:hover {
   transform: translateY(-20px);
-  z-index: 12;
+
 }
 .bg {
   background-image: url("../assets/img/bg.webp");
