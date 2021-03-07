@@ -99,10 +99,10 @@ export default {
 </script>
 <style lang="scss">
 .cart {
-  // padding-top: 127px;
-  // padding-bottom: 127px;
-  // padding-left: 128px;
-  // padding-right: 128px;
+  padding-top: 127px;
+  padding-bottom: 127px;
+  padding-left: 128px;
+  padding-right: 128px;
 
   &__line {
     display: $f;
@@ -112,6 +112,7 @@ export default {
     transform: 0.5s;
     margin-left: -25px;
         margin-right: -25px;
+        flex-wrap: wrap;
   }
    &__line-no {
     margin-bottom: 0;
@@ -126,7 +127,7 @@ export default {
   
   }
   &__img {
-    max-width: 100%;
+ width: 100%;
    overflow: hidden;
     z-index: 2;
   }

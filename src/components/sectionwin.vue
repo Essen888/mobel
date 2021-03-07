@@ -2,7 +2,7 @@
   <div id="sectwin">
     <section class="section">
       <h4 class="section__h4">
-        Mobel ipsum dolor sit amet, consectetur adipiscing elit
+        Mobel ipsum dolor sit amet consectetur adipiscing elit
       </h4>
       <div class="section__block">
         <div class="section__block-left">
@@ -11,7 +11,7 @@
            
             <source
               srcset="../assets/img/section__img2.png"
-              media="(max-width:976px)"
+              media="(max-width:978px)"
               class="section__img33"
             />
 
@@ -219,6 +219,8 @@ export default {
     margin-bottom: 63px;
     text-align: center;
     padding-top: 90px;
+    margin-right: 90px;
+margin-left: 90px;
   }
   .section__right-img1 {
     position: absolute;
@@ -236,20 +238,15 @@ export default {
      z-index: 1;
      max-width: 536px;
   }
-  .section__h4{
-  
-margin-right: 90px;
-margin-left: 90px;
-
-  }
+ 
   .section__h5{
     font-style: normal;
 font-weight: 600;
 font-size: 24px;
 line-height: 32px;
 text-align: center;
-margin-right: 90px;
-margin-left: 90px;
+margin-right: 145px;
+margin-left: 145px;
 margin-bottom: 45px;
   }
   .section__p{
@@ -258,8 +255,8 @@ font-weight: 500;
 font-size: 18px;
 line-height: 36px;
 text-align: center;
-margin-left: 104px;
-margin-right: 104px;
+margin-left: 145px;
+margin-right: 145px;
 margin-bottom: 45px;
   }
   .section__img{
@@ -270,9 +267,27 @@ margin-bottom: 45px;
         width: 100%;
   }
   picture{
-     width: 100%;
+     max-width: 100%;
   }
 }
+@media (max-width:638px) {
+  .section__h4 {
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 40px;
+  }
+    .section__h5{
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 40px;
+  }
+   .section__p {
+    margin-right: 30px;
+    margin-left: 30px;
+   
+  }
+}
+
 @media (max-width: 547px) {
 .section__right-img1 {
     position: absolute;
@@ -294,7 +309,25 @@ margin-bottom: 45px;
         font-size: 25px;
     line-height: 35px;
 }
+.section__h5 {
+    margin-right: 60px;
+    margin-left: 60px;
+        font-size: 25px;
+    line-height: 35px;
 }
+  .section__p{
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 36px;
+text-align: center;
+margin-left: 60px;
+margin-right: 60px;
+margin-bottom: 45px;
+  
+}
+}
+// mob
 @media (max-width: 400px) {
 .section__h4{
   font-style: normal;
@@ -311,23 +344,29 @@ letter-spacing: 0.04em;
     margin-bottom: 25px;
 }
 .section__h5{
-  font-style: normal;
+ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 162%;
-margin-right: 44px;
-margin-left: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 40px;
 margin-bottom: 16px;
 text-align: center;
 }
+
 .section__p{
   font-style: normal;
 font-weight: 300;
 font-size: 14px;
 line-height: 22px;
 text-align: center;
-margin-right: 20px;
 margin-left: 20px;
+margin-right: 20px;
 margin-bottom: 36px;
 
 }
