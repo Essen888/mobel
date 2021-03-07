@@ -48,8 +48,13 @@
           />
         </div>
            <div class="sectwin__mob">
-             <img src="../assets/img/section-img1.webp" alt="" class="section__right-img-mob1">
+             <img src="../assets/img/section-img2.webp" alt="" class="section__right-img3">
+            <!-- мини картинка -->
+            <img src="../assets/img/section-img1.webp" alt="" class="section__right-img-mob1"> 
+             <!-- подушка -->
              <img src="../assets/img/section__img2.png" alt="" class="section__right-img-mob2">
+             <!-- стул -->
+            
            </div>
       </div>
    
@@ -209,9 +214,9 @@ export default {
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
-    line-height: 44px;
+    line-height: 34px;
     letter-spacing: 0.025em;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
     text-align: center;
     padding-top: 90px;
   }
@@ -241,7 +246,7 @@ margin-left: 90px;
     font-style: normal;
 font-weight: 600;
 font-size: 24px;
-line-height: 42px;
+line-height: 32px;
 text-align: center;
 margin-right: 90px;
 margin-left: 90px;
@@ -305,12 +310,39 @@ letter-spacing: 0.04em;
     padding-top: 40px;
     margin-bottom: 25px;
 }
+.section__h5{
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 162%;
+margin-right: 44px;
+margin-left: 44px;
+margin-bottom: 16px;
+text-align: center;
+}
+.section__p{
+  font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 22px;
+text-align: center;
+margin-right: 20px;
+margin-left: 20px;
+
+}
 .section__block-right{
   display: none;
 }
+.section__right-img3{
+   position:absolute;
+    margin-top: 0px;
+left: 0px;
+    z-index: 15;
+    max-width: 30%;
+}
 .section__right-img-mob1{
  position:absolute ;
-    margin-top: 120px;
+  margin-top: 120px;
 right: 0px;
     z-index: 5;
     max-width: 50%;
