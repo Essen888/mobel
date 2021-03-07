@@ -7,7 +7,7 @@
       <div class="section__block">
         <div class="section__block-left">
        <div class="pict__mob">
-          <picture>
+          <picture class="tish">
            
             <source
               srcset="../assets/img/section__img2.png"
@@ -158,7 +158,7 @@ export default {
    .section{
     padding-right: 50px;
     padding-left: 50px;
-    margin-bottom: 100px;
+
   }
   .section__h4{
     font-size: 28px;
@@ -264,11 +264,12 @@ margin-bottom: 45px;
         margin-right: 0px;
        padding-right: 0;
         padding-left: 0;
-        width: 100%;
+        // max-width: 100%;
   }
-  picture{
-     max-width: 100%;
+ .tish{
+    //  max-width: 100%;
   }
+  
 }
 @media (max-width:638px) {
   .section__h4 {
@@ -282,8 +283,8 @@ margin-bottom: 45px;
     line-height: 40px;
   }
    .section__p {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 130px;
+    margin-left: 130px;
    
   }
 }
@@ -321,8 +322,8 @@ font-weight: 500;
 font-size: 18px;
 line-height: 36px;
 text-align: center;
-margin-left: 60px;
-margin-right: 60px;
+margin-left: 150px;
+margin-right: 150px;
 margin-bottom: 45px;
   
 }

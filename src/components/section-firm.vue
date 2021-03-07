@@ -1,24 +1,24 @@
 <template>
-  <div class="fsection">
-    <h6 class="fsection__h6">Wir werden erwähnt</h6>
+  <div class="f-section">
+    <h6 class="f-section__h6">Wir werden erwähnt</h6>
     <div class="fsection__firm">
-      <img src="../assets/img/firm-1.webp" alt="" class="fsection__img_f" />
+      <img src="../assets/img/firm-1.webp" alt="" class="f-section__img_f" />
       <img
         src="../assets/img/Rectangle 30.webp"
         alt=""
-        class="fsection--img-f"
+        class="f-section--img-f"
       />
       <img
         src="../assets/img/Rectangle 31.png"
         alt=""
-        class="fsection__img-f"
+        class="f-section__img-f"
       />
     </div>
   </div>
 </template>
 
 <style lang="scss">
-.fsection {
+.f-section {
   display: $f;
   justify-content: $c;
   align-content: $c;
