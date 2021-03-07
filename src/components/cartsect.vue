@@ -41,9 +41,9 @@
             nunc lacinia faucibus mauris viverra.
           </p>
         </div>
-      </div>
+   
 
-      <div class="cart__line cart__line-no">
+  
         <div class="cart__hover">
           <img
             src="../assets/img/cart4.webp"
@@ -99,10 +99,10 @@ export default {
 </script>
 <style lang="scss">
 .cart {
-  padding-top: 127px;
-  padding-bottom: 127px;
-  padding-left: 128px;
-  padding-right: 128px;
+  // padding-top: 127px;
+  // padding-bottom: 127px;
+  // padding-left: 128px;
+  // padding-right: 128px;
 
   &__line {
     display: $f;
@@ -110,6 +110,8 @@ export default {
     align-items: $c;
     margin-bottom: 50px;
     transform: 0.5s;
+    margin-left: -25px;
+        margin-right: -25px;
   }
    &__line-no {
     margin-bottom: 0;

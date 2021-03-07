@@ -328,6 +328,7 @@ line-height: 22px;
 text-align: center;
 margin-right: 20px;
 margin-left: 20px;
+margin-bottom: 36px;
 
 }
 .section__block-right{
