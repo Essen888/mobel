@@ -289,7 +289,7 @@ font-weight: 500;
 font-size: 19px;
 line-height: 27px;
 text-align: center;
-letter-spacing: 0.04em;
+letter-spacing: none;
 padding-top: 37px;
 padding-bottom: 22px;
   }
@@ -309,4 +309,13 @@ line-height: 20px;
 text-align: center;
    }
     }
+    
+
+@media (max-width: 355px){
+
+.main {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+     }
 </style>

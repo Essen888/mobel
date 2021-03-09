@@ -255,7 +255,7 @@ line-height: 46px;}
 }
 @media(max-width:400px){
   .h1{font-weight: normal;
-font-size: 27px;
+font-size: 25px;
 line-height: 36px;}
 .burger__line {
     width: 42px;
@@ -264,6 +264,11 @@ line-height: 36px;}
 .top_burger{
   padding-right: 10px;
 }
+}
+@media(max-width:344px){
+  .h1{
+font-size: 24px;
+  }
 }
 @media(max-width:330px){
   .h1{font-weight: normal;
