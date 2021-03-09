@@ -1,7 +1,7 @@
 <template>
   <div id="sectwin">
     <section class="section">
-      <h4 class="section__h4__title">
+      <h4 class="section__h4">
         Mobel ipsum dolor sit amet, consectetur adipiscing elit
       </h4>
       <div class="section__block">
@@ -23,7 +23,7 @@
           </picture>
       </div>
           <div class="section__block_text">
-            <h5 class="section__h5__title">
+            <h5 class="section__h5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h5>
             <div class="section__p">
@@ -160,11 +160,11 @@ export default {
     padding-left: 50px;
     margin-bottom: 100px;
   }
-  .section__h4__title{
+  .section__h4{
     font-size: 28px;
 
   }
-  .section__h5__title{
+  .section__h5{
     font-size: 18px;
   }
   .section__p{
@@ -203,17 +203,6 @@ export default {
 
       
   }
-  
-   .section__h5__title{
-    font-style: normal;
-font-weight: 600;
-font-size: 28px;
-line-height: 32px;
-text-align: center;
-margin-right: 145px;
-margin-left: 145px;
-margin-bottom: 45px;
-  }
   .section__block_text {
     display: $f;
     flex-direction: column;
@@ -222,10 +211,10 @@ margin-bottom: 45px;
     order: -1;
     margin-top: 60px;
   }
-  .section__h4__title {
+  .section__h4 {
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 34px;
     letter-spacing: 0.025em;
     margin-bottom: 63px;
@@ -233,16 +222,6 @@ margin-bottom: 45px;
     padding-top: 90px;
     margin-right: 90px;
 margin-left: 90px;
-  }
-  .section__p{
-    font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 36px;
-text-align: center;
-margin-left: 145px;
-margin-right: 145px;
-margin-bottom: 45px;
   }
   .section__right-img1 {
     position: absolute;
@@ -261,7 +240,26 @@ margin-bottom: 45px;
      max-width: 536px;
   }
  
- 
+  .section__h5{
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+margin-right: 145px;
+margin-left: 145px;
+margin-bottom: 45px;
+  }
+  .section__p{
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 36px;
+text-align: center;
+margin-left: 145px;
+margin-right: 145px;
+margin-bottom: 45px;
+  }
   .section__img{
    
       //   margin-right: 0px;
@@ -277,12 +275,12 @@ margin-bottom: 45px;
   }
 }
 @media (max-width:638px) {
-  .section__h4__title {
+  .section__h4 {
     margin-right: 30px;
     margin-left: 30px;
     line-height: 40px;
   }
-    .section__h5__title{
+    .section__h5{
     margin-right: 30px;
     margin-left: 30px;
     line-height: 40px;
@@ -309,13 +307,13 @@ margin-bottom: 45px;
     z-index: 1;
     max-width: 336px;
 }
-.section__h4__title {
+.section__h4 {
     margin-right: 60px;
     margin-left: 60px;
         font-size: 27px;
     line-height: 35px;
 }
-.section__h5__title {
+.section__h5 {
     margin-right: 60px;
     margin-left: 60px;
         font-size: 25px;
@@ -335,7 +333,7 @@ margin-bottom: 45px;
 }
 // mob
 @media (max-width: 400px) {
-.section__h4__title{
+.section__h4{
   font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -349,7 +347,7 @@ letter-spacing: 0.04em;
     padding-top: 40px;
     margin-bottom: 25px;
 }
-.section__h5__title{
+.section__h5{
  font-style: normal;
 font-weight: 500;
 font-size: 16px;
