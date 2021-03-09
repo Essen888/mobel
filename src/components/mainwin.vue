@@ -229,6 +229,7 @@ font-weight: 500;
 line-height: 38px;
 padding-top: 96px;
 padding-bottom: 63px;
+font-size: 31px;
 
 }
 

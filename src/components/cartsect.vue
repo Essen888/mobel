@@ -221,7 +221,7 @@ export default {
   }
   &__text {
   
-    font-size: 15px;
+    font-size: 14px;
     line-height: 17px;
     background: rgba(231, 231, 231, 0.8);
     padding: 10px 5px;
@@ -261,7 +261,7 @@ export default {
   }
   &__text {
   
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.5;
     background: rgba(231, 231, 231, 0.8);
     padding: 5px 10px;

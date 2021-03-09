@@ -1,17 +1,17 @@
 <template>
   <div id="sectwin">
     <section class="section">
-      <h4 class="section__h4">
-        Mobel ipsum dolor sit amet consectetur adipiscing elit
+      <h4 class="section__h4__title">
+        Mobel ipsum dolor sit amet, consectetur adipiscing elit
       </h4>
       <div class="section__block">
         <div class="section__block-left">
        <div class="pict__mob">
-          <picture class="tish">
+          <picture>
            
             <source
               srcset="../assets/img/section__img2.png"
-              media="(max-width:978px)"
+              media="(max-width:976px)"
               class="section__img33"
             />
 
@@ -23,7 +23,7 @@
           </picture>
       </div>
           <div class="section__block_text">
-            <h5 class="section__h5">
+            <h5 class="section__h5__title">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h5>
             <div class="section__p">
@@ -158,13 +158,13 @@ export default {
    .section{
     padding-right: 50px;
     padding-left: 50px;
-
+    margin-bottom: 100px;
   }
-  .section__h4{
+  .section__h4__title{
     font-size: 28px;
 
   }
-  .section__h5{
+  .section__h5__title{
     font-size: 18px;
   }
   .section__p{
@@ -176,6 +176,7 @@ export default {
 @media (max-width: 978px) {
   .section{
     padding: 0;
+    margin: 0;
   }
   .section__block {
     display: $f;
@@ -202,6 +203,17 @@ export default {
 
       
   }
+  
+   .section__h5__title{
+    font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 32px;
+text-align: center;
+margin-right: 145px;
+margin-left: 145px;
+margin-bottom: 45px;
+  }
   .section__block_text {
     display: $f;
     flex-direction: column;
@@ -210,10 +222,10 @@ export default {
     order: -1;
     margin-top: 60px;
   }
-  .section__h4 {
+  .section__h4__title {
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 34px;
     letter-spacing: 0.025em;
     margin-bottom: 63px;
@@ -221,6 +233,16 @@ export default {
     padding-top: 90px;
     margin-right: 90px;
 margin-left: 90px;
+  }
+  .section__p{
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 36px;
+text-align: center;
+margin-left: 145px;
+margin-right: 145px;
+margin-bottom: 45px;
   }
   .section__right-img1 {
     position: absolute;
@@ -239,52 +261,35 @@ margin-left: 90px;
      max-width: 536px;
   }
  
-  .section__h5{
-    font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 32px;
-text-align: center;
-margin-right: 145px;
-margin-left: 145px;
-margin-bottom: 45px;
-  }
-  .section__p{
-    font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 36px;
-text-align: center;
-margin-left: 145px;
-margin-right: 145px;
-margin-bottom: 45px;
-  }
+ 
   .section__img{
    
-        margin-right: 0px;
+      //   margin-right: 0px;
+      //  padding-right: 0;
+      //   padding-left: 0;
+      //   max-width: 100%;
+  }
+  picture{
+     margin-right: 0px;
        padding-right: 0;
         padding-left: 0;
-        // max-width: 100%;
+     max-width: 100%;
   }
- .tish{
-    //  max-width: 100%;
-  }
-  
 }
 @media (max-width:638px) {
-  .section__h4 {
+  .section__h4__title {
     margin-right: 30px;
     margin-left: 30px;
     line-height: 40px;
   }
-    .section__h5{
+    .section__h5__title{
     margin-right: 30px;
     margin-left: 30px;
     line-height: 40px;
   }
    .section__p {
-    margin-right: 130px;
-    margin-left: 130px;
+    margin-right: 30px;
+    margin-left: 30px;
    
   }
 }
@@ -304,13 +309,13 @@ margin-bottom: 45px;
     z-index: 1;
     max-width: 336px;
 }
-.section__h4 {
+.section__h4__title {
     margin-right: 60px;
     margin-left: 60px;
-        font-size: 25px;
+        font-size: 27px;
     line-height: 35px;
 }
-.section__h5 {
+.section__h5__title {
     margin-right: 60px;
     margin-left: 60px;
         font-size: 25px;
@@ -322,15 +327,15 @@ font-weight: 500;
 font-size: 18px;
 line-height: 36px;
 text-align: center;
-margin-left: 150px;
-margin-right: 150px;
+margin-left: 60px;
+margin-right: 60px;
 margin-bottom: 45px;
   
 }
 }
 // mob
 @media (max-width: 400px) {
-.section__h4{
+.section__h4__title{
   font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -344,7 +349,7 @@ letter-spacing: 0.04em;
     padding-top: 40px;
     margin-bottom: 25px;
 }
-.section__h5{
+.section__h5__title{
  font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -355,7 +360,7 @@ text-align: center;
 letter-spacing: 0.04em;
     margin-right: 5px;
     margin-left: 5px;
-    padding-top: 40px;
+    padding-top: 28px;
 margin-bottom: 16px;
 text-align: center;
 }
