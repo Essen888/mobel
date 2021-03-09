@@ -113,6 +113,7 @@ export default {
     margin-left: -25px;
         margin-right: -25px;
         flex-wrap: wrap;
+        max-width: 1104px;
   }
   
   &__hover {
@@ -140,11 +141,11 @@ export default {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 18px;
+    line-height:1.4;
     background: rgba(231, 231, 231, 0.8);
     padding: 15px 10px;
     transition: all 0.7s ease-in-out 0s;
-    transform: translateX(300px);
+    transform: translateX(290px);
     max-width: 50%;
     display: $f;
     justify-content: $c;
@@ -156,6 +157,17 @@ export default {
     margin-left: 40%;
   }
 }
+@media(max-width:1116px){
+  .cart__text {
+    font-size: 12px;
+  }
+}
+@media(max-width:1040px){
+  .cart__text {
+    font-size: 11px;
+  }
+}
+
 @media(max-width:1016px){
   .cart{
      padding-top: 80px;
@@ -183,12 +195,29 @@ export default {
   }
   &__text {
   
-    font-size: 13px;
+    font-size: 10px;
     line-height: 15px;
  padding: 10px 5px;
 
     
   }
+  }
+}
+@media(max-width:858px){
+  .cart__text {
+    font-size: 9px;
+  }
+}
+@media(max-width:840px){
+  .cart__text {
+    font-size: 8px;
+  }
+}
+@media(max-width:794px){
+  .cart__text {
+    font-size: 7px;
+    line-height: 1.5;
+    padding: 10px 10px;
   }
 }
   // lap
@@ -232,6 +261,27 @@ export default {
   }
   }
 }
+@media(max-width:720px){
+  .cart__text {
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 10px;
+  }
+}
+@media(max-width:694px){
+  .cart__text {
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 15px 10px;
+  }
+}
+@media(max-width:628px){
+  .cart__text {
+    font-size: 9px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
 @media(max-width:600px){
   
    .cart{
@@ -272,5 +322,60 @@ export default {
   }
   }
 }
-
+@media(max-width:594px){
+  .cart__text {
+    font-size: 23px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
+@media(max-width:550px){
+  .cart__text {
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
+@media(max-width:466px){
+  .cart__text {
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
+@media(max-width:422px){
+  .cart__text {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
+@media(max-width:382px){
+  .cart__text {
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
+@media(max-width:346px){
+  .cart__text {
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
+@media(max-width:310px){
+  .cart__text {
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
+@media(max-width:278px){
+  .cart__text {
+    font-size: 9px;
+    line-height: 1.5;
+    padding: 10px 10px;
+  }
+}
 </style>

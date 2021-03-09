@@ -96,6 +96,7 @@ export default {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 42px;
+    max-width: 360px;
   }
   &__block {
     display: $f;
@@ -104,6 +105,7 @@ export default {
   }
   &__block_text {
     display: $f;
+    
     flex-direction: column;
   }
   &__block-left {
@@ -136,6 +138,7 @@ export default {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    max-width: 360px;
   }
 }
 @media (max-width: 1330px) {
@@ -215,7 +218,7 @@ export default {
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.5;
     letter-spacing: 0.025em;
     margin-bottom: 63px;
     text-align: center;
@@ -244,11 +247,12 @@ margin-left: 90px;
     font-style: normal;
 font-weight: 600;
 font-size: 24px;
-line-height: 32px;
+line-height: 1.5;
 text-align: center;
 margin-right: 145px;
 margin-left: 145px;
 margin-bottom: 45px;
+max-width: none;
   }
   .section__p{
     font-style: normal;
@@ -259,6 +263,7 @@ text-align: center;
 margin-left: 145px;
 margin-right: 145px;
 margin-bottom: 45px;
+max-width: none;
   }
   .section__img{
    

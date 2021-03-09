@@ -138,6 +138,7 @@ export default {
     font-weight: normal;
     font-size: 18px;
     line-height: 36px;
+    max-width: 379px;
   }
 }
 .main__content-pl {
