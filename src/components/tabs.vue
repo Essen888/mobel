@@ -6,7 +6,14 @@
           <li
             class="tabs__list_li"
             @click="
-              (see1 = true), (see = false), (see2 = false), (see3 = false),(see4 = false), (see5 = false), (see6 = false), (see7 = false)
+              (see1 = true),
+                (see = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
             "
           >
             <span>voluptate</span>
@@ -14,7 +21,14 @@
           <li
             class="tabs__list_li"
             @click="
-              (see1 = false), (see = true), (see2 = false), (see3 = false),(see4 = false), (see5 = false), (see6 = false), (see7 = false)
+              (see1 = false),
+                (see = true),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
             "
           >
             <span><a>reprehenderit</a></span>
@@ -22,7 +36,14 @@
           <li
             class="tabs__list_li"
             @click="
-              (see = false), (see1 = false), (see2 = true), (see3 = false),(see4 = false), (see5 = false), (see6 = false), (see7 = false)
+              (see = false),
+                (see1 = false),
+                (see2 = true),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
             "
           >
             <span>veniam</span>
@@ -30,45 +51,225 @@
           <li
             class="tabs__list_li"
             @click="
-              (see = false), (see1 = false), (see2 = false), (see3 = true),(see4 = false), (see5 = false), (see6 = false), (see7 = false)
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = true),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
             "
           >
             <span><a>proident</a></span>
           </li>
-          <li class="tabs__list_li" @click="
-              (see = false), (see1 = false), (see2 = false), (see3 = false),(see4 = true), (see5 = false), (see6 = false), (see7 = false)
-            "><span>voluptate</span></li>
-          <li class="tabs__list_li"  @click="
-              (see = false), (see1 = false), (see2 = false), (see3 = false),(see4 = false), (see5 = true), (see6 = false), (see7 = false)
-            "><span>reprehenderit</span></li>
-          <li class="tabs__list_li" @click="
-              (see = false), (see1 = false), (see2 = false), (see3 = false),(see4 = false), (see5 = false), (see6 = true), (see7 = false)
-            "  ><span>veniam</span></li>
-          <li class="tabs__list_li" @click="
-              (see = false), (see1 = false), (see2 = false), (see3 = false),(see4 = false), (see5 = false), (see6 = false), (see7 = true)
-            "><span>proident</span></li>
+          <li
+            class="tabs__list_li"
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = true),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
+            "
+          >
+            <span>voluptate</span>
+          </li>
+          <li
+            class="tabs__list_li "
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = true),
+                (see6 = false),
+                (see7 = false)
+            "
+          >
+            <span>reprehenderit</span>
+          </li>
+          <li
+            class="tabs__list_li "
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = true),
+                (see7 = false)
+            "
+          >
+            <span>veniam</span>
+          </li>
+          <li
+            class="tabs__list_li"
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = true)
+            "
+          >
+            <span>proident</span>
+          </li>
+        </ul>
+        <!-- lept -->
+           <ul class="tabs__list-1">
+          <li
+            class="tabs__list_li"
+            @click="
+              (see1 = true),
+                (see = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
+            "
+          >
+            <span>voluptate</span>
+          </li>
+          <li
+            class="tabs__list_li"
+            @click="
+              (see1 = false),
+                (see = true),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
+            "
+          >
+            <span><a>reprehenderit</a></span>
+          </li>
+          <li
+            class="tabs__list_li"
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = true),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
+            "
+          >
+            <span>veniam</span>
+          </li>
+          <li
+            class="tabs__list_li"
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = true),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
+            "
+          >
+            <span><a>proident</a></span>
+          </li>
+           </ul>
+            <ul class="tabs__list-1 ">
+          <li
+            class="tabs__list_li"
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = true),
+                (see5 = false),
+                (see6 = false),
+                (see7 = false)
+            "
+          >
+            <span>voluptate</span>
+          </li>
+          <li
+            class="tabs__list_li "
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = true),
+                (see6 = false),
+                (see7 = false)
+            "
+          >
+            <span>reprehenderit</span>
+          </li>
+          <li
+            class="tabs__list_li "
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = true),
+                (see7 = false)
+            "
+          >
+            <span>veniam</span>
+          </li>
+          <li
+            class="tabs__list_li"
+            @click="
+              (see = false),
+                (see1 = false),
+                (see2 = false),
+                (see3 = false),
+                (see4 = false),
+                (see5 = false),
+                (see6 = false),
+                (see7 = true)
+            "
+          >
+            <span>proident</span>
+          </li>
         </ul>
       </div>
       <div class="tabs__img_col">
-          <img
+        <img
           src="../assets/img/img7.webp"
           alt=""
           class="tabs__img"
           v-show="see7"
         />
-          <img
+        <img
           src="../assets/img/img6.webp"
           alt=""
           class="tabs__img"
           v-show="see6"
         />
-         <img
+        <img
           src="../assets/img/img5.webp"
           alt=""
           class="tabs__img"
           v-show="see5"
         />
-         <img
+        <img
           src="../assets/img/img4.webp"
           alt=""
           class="tabs__img"
@@ -114,10 +315,9 @@ export default {
       see4: false,
       see5: false,
       see6: false,
-      see7: false
+      see7: false,
     };
   },
-  
 };
 </script>
 <style lang="scss">
@@ -145,8 +345,11 @@ export default {
     justify-content: $c;
     padding: 127px 111px;
   }
-
+ &__list-1 {
+   display: none;
+ }
   &__list {
+    display: block;
     color: aliceblue;
     list-style: none;
     display: $f;
@@ -190,4 +393,57 @@ export default {
     }
   }
 }
+@media(max-width:1248px){
+  .tabs{
+     
+  flex-direction: column;
+  
+  &__img_col{
+    margin-right:-111px;
+
+    display: flex;
+    align-items: stretch;
+  }
+  &__img{
+    max-width: 100%;
+  }
+  &__sol{
+  flex-wrap: wrap;
+    padding: 90px 65px;
+    align-items:center;
+    position:relative;
+    justify-content: space-around;
+  }
+  &__list{
+    display:none;
+  }
+ 
+   &__list-1 {
+   display: block;
+ }
+
+ &__list-1 {
+    display: block;
+    color: aliceblue;
+    list-style: none;
+    display: $f;
+    flex-direction: column;
+    justify-content: $c;
+
+    text-align: start;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.9;
+    text-transform: uppercase;
+    color: #fffafa;
+ }
+   
+  }
+}
 </style>
+
+
+
+
+
