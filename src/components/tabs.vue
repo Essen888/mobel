@@ -1,6 +1,6 @@
 <template>
   <div class="tabs1">
-    <div class="tabs">
+    <div class="tabs" v-if="!mobSlid">
       <div class="tabs__sol">
         <ul class="tabs__list">
           <li
@@ -16,7 +16,7 @@
                 (see7 = false)
             "
           >
-            <span>voluptate</span>
+            <span><a>voluptate</a></span>
           </li>
           <li
             class="tabs__list_li"
@@ -79,7 +79,7 @@
             <span>voluptate</span>
           </li>
           <li
-            class="tabs__list_li "
+            class="tabs__list_li"
             @click="
               (see = false),
                 (see1 = false),
@@ -94,7 +94,7 @@
             <span>reprehenderit</span>
           </li>
           <li
-            class="tabs__list_li "
+            class="tabs__list_li"
             @click="
               (see = false),
                 (see1 = false),
@@ -125,7 +125,7 @@
           </li>
         </ul>
         <!-- lept -->
-           <ul class="tabs__list-1">
+        <ul class="tabs__list-1">
           <li
             class="tabs__list_li"
             @click="
@@ -139,7 +139,7 @@
                 (see7 = false)
             "
           >
-            <span>voluptate</span>
+            <span><a>voluptate</a></span>
           </li>
           <li
             class="tabs__list_li"
@@ -186,8 +186,8 @@
           >
             <span><a>proident</a></span>
           </li>
-           </ul>
-            <ul class="tabs__list-1 ">
+        </ul>
+        <ul class="tabs__list-1">
           <li
             class="tabs__list_li"
             @click="
@@ -204,7 +204,7 @@
             <span>voluptate</span>
           </li>
           <li
-            class="tabs__list_li "
+            class="tabs__list_li"
             @click="
               (see = false),
                 (see1 = false),
@@ -219,7 +219,7 @@
             <span>reprehenderit</span>
           </li>
           <li
-            class="tabs__list_li "
+            class="tabs__list_li"
             @click="
               (see = false),
                 (see1 = false),
@@ -301,13 +301,44 @@
         />
       </div>
     </div>
+
+    <swiper
+      :slides-per-view="1"
+      :space-between="10"
+      @swiper="onSwiper"
+      @slideChange="onSlideChange"
+      v-else
+      :autoplay="{  delay: 1000 }"
+    >
+      <swiper-slide class="img-wrapp-sw">    <span><a class="text-sl">voluptate</a></span><img src="../assets/img/img7.webp" alt="" class="img-swip"/></swiper-slide>
+      <swiper-slide> <img src="../assets/img/img6.webp" alt="" class="img-swip"/></swiper-slide>
+
+      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img5.webp" alt="" class="img-swip" /></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img4.webp" alt="" class="img-swip"/></swiper-slide>
+       <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img3.webp" alt="" class="img-swip"/></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img2.webp" alt="" class="img-swip"/></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img1.webp" alt="" class="img-swip"/></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img.webp" alt="" class="img-swip"/></swiper-slide>
+    </swiper>
   </div>
 </template>
 <script>
+import SwiperCore, { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/swiper.scss";
+
+SwiperCore.use([Autoplay]);
 export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+    SwiperCore
+  },
   name: "tabs1",
   data: () => {
     return {
+      mobSlid: true,
+      tabsPL: false,
       see: false,
       see1: true,
       see2: false,
@@ -318,9 +349,39 @@ export default {
       see7: false,
     };
   },
+  created() {
+    this.sliderMob();
+    window.addEventListener("resize", this.sliderMob);
+  },
+  methods: {
+    onSwiper(swiper) {
+      console.log(swiper);
+    },
+    onSlideChange() {
+      console.log("slide change");
+    },
+    sliderMob() {
+      this.mobSlid = window.innerWidth <= 800;
+    },
+  },
 };
 </script>
 <style lang="scss">
+.text-sl{
+  color:black;
+  display:block;
+ 
+}
+.img-swip{
+   width: 100%;
+}
+.img-wrapp-sw{
+  width: 100%;
+ display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+}
 .tabs {
   display: $f;
   justify-content: space-between;
@@ -345,9 +406,9 @@ export default {
     justify-content: $c;
     padding: 127px 111px;
   }
- &__list-1 {
-   display: none;
- }
+  &__list-1 {
+    display: none;
+  }
   &__list {
     display: block;
     color: aliceblue;
@@ -363,13 +424,15 @@ export default {
     line-height: 1.9;
     text-transform: uppercase;
     color: #fffafa;
+
     &_li span {
       position: relative;
-      margin-right: 10px;
+
       line-height: 1.9;
-      width: 0px;
+      width: 210px;
       background-color: #f4dedf00;
       transition: all 1s ease-in-out 0s;
+      background-color: transparent;
     }
 
     &_li span::after {
@@ -382,63 +445,76 @@ export default {
       width: 10px;
       height: 10px;
       transform: rotate(45deg);
-      top: 3px;
+      top: 8px;
       left: -25px;
     }
+
+    &_li span {
+      padding: 6px;
+    }
+
     &_li span:hover {
-      display: inline-block;
-      width: 213px;
+      display: block;
+      width: 220px;
       color: rgb(36, 35, 35);
       background-color: #f8f2f281;
+      padding: 6px;
     }
   }
 }
-@media(max-width:1248px){
-  .tabs{
-     
-  flex-direction: column;
-  
-  &__img_col{
-    margin-right:-111px;
-
-    display: flex;
-    align-items: stretch;
-  }
-  &__img{
-    max-width: 100%;
-  }
-  &__sol{
-  flex-wrap: wrap;
-    padding: 90px 65px;
-    align-items:center;
-    position:relative;
-    justify-content: space-around;
-  }
-  &__list{
-    display:none;
-  }
- 
-   &__list-1 {
-   display: block;
- }
-
- &__list-1 {
-    display: block;
-    color: aliceblue;
-    list-style: none;
-    display: $f;
+@media (max-width: 1248px) {
+  .tabs {
     flex-direction: column;
-    justify-content: $c;
 
-    text-align: start;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 1.9;
-    text-transform: uppercase;
-    color: #fffafa;
- }
-   
+    &__img_col {
+      margin-right: -111px;
+
+      display: flex;
+      align-items: center;
+    }
+    &__img {
+      max-width: 100%;
+    }
+    &__sol {
+      flex-wrap: wrap;
+      padding: 90px 68px;
+      align-items: center;
+      position: relative;
+      justify-content: space-around;
+    }
+    &__list {
+      display: none;
+    }
+
+    &__list-1 {
+      display: block;
+
+      border: 310px;
+    }
+
+    &__list-1 {
+      display: block;
+      color: aliceblue;
+      list-style: none;
+      display: $f;
+      flex-direction: column;
+      justify-content: $c;
+
+      text-align: start;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: #fffafa;
+      border: 210px;
+      background-color: transparent;
+    }
+  }
+}
+@media (max-width: 740px) {
+  .tabs__sol {
+    display: none;
   }
 }
 </style>

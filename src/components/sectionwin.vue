@@ -223,8 +223,8 @@ export default {
     margin-bottom: 63px;
     text-align: center;
     padding-top: 90px;
-    margin-right: 90px;
-margin-left: 90px;
+    margin-right: 120px;
+margin-left: 120px;
   }
   .section__right-img1 {
     position: absolute;
@@ -236,7 +236,7 @@ margin-left: 90px;
   }
    .section__right-img2{
     position: relative;
-
+    margin-right: 150px;
     margin-top: 0px;
     margin-left: 0px;
      z-index: 1;
@@ -265,13 +265,7 @@ margin-right: 145px;
 margin-bottom: 45px;
 max-width: none;
   }
-  .section__img{
-   
-      //   margin-right: 0px;
-      //  padding-right: 0;
-      //   padding-left: 0;
-      //   max-width: 100%;
-  }
+  
   picture{
      margin-right: 0px;
        padding-right: 0;

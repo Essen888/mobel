@@ -4,12 +4,12 @@
     <div class="fsection__firm">
       <img src="../assets/img/firm-1.webp" alt="" class="f-section__img_f" />
       <img
-        src="../assets/img/Rectangle 30.webp"
+        src="../assets/img/Rectangle-30.webp"
         alt=""
         class="f-section--img-f"
       />
       <img
-        src="../assets/img/Rectangle 31.png"
+        src="../assets/img/Rectangle-31.png"
         alt=""
         class="f-section__img-f"
       />
