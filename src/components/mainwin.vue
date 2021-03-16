@@ -122,7 +122,7 @@ export default {
   }
   &__h3 {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 24px;
     line-height: 38px;
     margin-bottom: 42px;
@@ -135,7 +135,7 @@ export default {
   }
   &__text-p {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 18px;
     line-height: 36px;
     max-width: 379px;
@@ -235,7 +235,7 @@ padding-bottom: 63px;
 
 &__h3{
 font-style: normal;
-font-weight: 600;
+
 font-size: 24px;
 line-height: 38px;
 margin-bottom: 45px;

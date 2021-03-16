@@ -82,7 +82,7 @@ export default {
   background-color: #f4dedf;
   &__h4 {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
     line-height: 38px;
     color: #000;
@@ -135,7 +135,7 @@ export default {
   }
   &__p {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 30px;
     max-width: 360px;
@@ -223,8 +223,8 @@ export default {
     margin-bottom: 63px;
     text-align: center;
     padding-top: 90px;
-    margin-right: 120px;
-margin-left: 120px;
+    margin-right: 100px;
+margin-left: 100px;
   }
   .section__right-img1 {
     position: absolute;
@@ -270,7 +270,10 @@ max-width: none;
      margin-right: 0px;
        padding-right: 0;
         padding-left: 0;
-     max-width: 100%;
+     width: 100%;
+  }
+  .section__img{
+    width: 100%;
   }
 }
 @media (max-width:638px) {

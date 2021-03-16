@@ -303,27 +303,53 @@
     </div>
 
     <swiper
+      class="swiper-bg"
       :slides-per-view="1"
-      :space-between="10"
+      :space-between="30"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
       v-else
-      :autoplay="{  delay: 1000 }"
+      :autoplay="{ delay: 1000 }"
     >
-      <swiper-slide class="img-wrapp-sw">    <span><a class="text-sl">voluptate</a></span><img src="../assets/img/img7.webp" alt="" class="img-swip"/></swiper-slide>
-      <swiper-slide> <img src="../assets/img/img6.webp" alt="" class="img-swip"/></swiper-slide>
-
-      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img5.webp" alt="" class="img-swip" /></swiper-slide>
-      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img4.webp" alt="" class="img-swip"/></swiper-slide>
-       <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img3.webp" alt="" class="img-swip"/></swiper-slide>
-      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img2.webp" alt="" class="img-swip"/></swiper-slide>
-      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img1.webp" alt="" class="img-swip"/></swiper-slide>
-      <swiper-slide class="img-wrapp-sw"> <img src="../assets/img/img.webp" alt="" class="img-swip"/></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"
+        ><span><a class="text-sl">voluptate</a></span
+        ><img src="../assets/img/img7.webp" alt="" class="img-swip"
+      /></swiper-slide>
+     <swiper-slide class="img-wrapp-sw"
+        ><span><a class="text-sl">voluptate</a></span>
+        <img src="../assets/img/img6.webp" alt="" class="img-swip"
+      /></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"
+        ><span><a class="text-sl">voluptate</a></span>
+        <img src="../assets/img/img5.webp" alt="" class="img-swip"
+      /></swiper-slide>
+      <swiper-slide class="img-wrapp-sw">
+        <span><a class="text-sl">voluptate</a></span
+        ><img src="../assets/img/img4.webp" alt="" class="img-swip"
+      /></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"
+        ><span><a class="text-sl">voluptate</a></span>
+        <img src="../assets/img/img3.webp" alt="" class="img-swip"
+      /></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"
+        ><span><a class="text-sl">voluptate</a></span>
+        <img src="../assets/img/img2.webp" alt="" class="img-swip"
+      /></swiper-slide>
+      <swiper-slide class="img-wrapp-sw"
+        ><span><a class="text-sl">voluptate</a></span>
+        <img src="../assets/img/img1.webp" alt="" class="img-swip"
+      /></swiper-slide>
+      <swiper-slide class="img-wrapp-sw">
+    
+<span><a class="text-sl">voluptate</a></span>
+        <img src="../assets/img/img.webp" alt="" class="img-swip"
+      />
+     </swiper-slide>
     </swiper>
   </div>
 </template>
 <script>
-import SwiperCore, { Autoplay } from 'swiper';
+import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/swiper.scss";
 
@@ -332,7 +358,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    SwiperCore
+    SwiperCore,
   },
   name: "tabs1",
   data: () => {
@@ -367,20 +393,17 @@ export default {
 };
 </script>
 <style lang="scss">
-.text-sl{
-  color:black;
-  display:block;
- 
+.text-sl {
+  color: black;
+  display: block;
 }
-.img-swip{
-   width: 100%;
-}
-.img-wrapp-sw{
+
+.img-wrapp-sw {
   width: 100%;
- display: flex;
-justify-content: flex-start;
-align-items: center;
-flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 .tabs {
   display: $f;
@@ -512,6 +535,53 @@ flex-direction: column;
     }
   }
 }
+@media (max-width: 800px) {
+  .swiper-bg {
+    background-color: #076550;
+  }
+  .img-wrapp-sw span::after {
+    content: "";
+    display: block;
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+    background-color: #fffafa;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    top: -30px;
+    left: -20px;
+   
+  }
+  .img-wrapp-sw span{
+    padding-top: 15px;
+  }
+  .text-sl{
+    font-family: Noto Serif TC;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 31px;
+text-transform: uppercase;
+color: #FFFFFF;
+
+  }
+  .img-wrapp-sw{
+
+  }
+  .img-swip{
+   width: 90%;
+    margin-bottom: 35px;
+  }
+  .text-sl{
+    padding: 4px;
+    position: relative;
+  }
+  .wrap_wort{
+    
+  }
+}
+
 @media (max-width: 740px) {
   .tabs__sol {
     display: none;
