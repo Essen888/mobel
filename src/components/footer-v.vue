@@ -55,6 +55,12 @@
 
 </script>
 <style lang="scss">
+.logo{
+  color: #076550;
+  text-transform: uppercase;
+  font-weight: 900;
+  
+}
 .footer__wr{
   background-color: #F4DEDF;
   display: flex;
