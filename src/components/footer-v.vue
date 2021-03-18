@@ -59,7 +59,15 @@
   color: #076550;
   text-transform: uppercase;
   font-weight: 900;
-  
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  &__text span{
+color: #076550;
+  text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+  font-size: 13px;
+   font-weight: 900;
+  }
 }
 .footer__wr{
   background-color: #F4DEDF;
