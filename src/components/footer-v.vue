@@ -3,8 +3,8 @@
     <div class="footer__wr">
       <div class="footer__wr_logo">
     <div class="logo">LOGO</div>
-    <p class="logo__text"><span>Logo</span>macht das Zuhause gemütlich</p>
-    <address>Munsterschtrasse 34 Essen 34533</address>
+    <p class="logo__text"><span>Logo</span>macht das Zuhause <br> gemütlich</p>
+    <address>Munsterschtrasse 34<br> Essen 34533</address>
     <p class="tel">
       Tel:<a href="tel:4848 940 123 23 33 0" class="tel"
         >4848 940 123 23 33 0</a
@@ -20,12 +20,14 @@
     <div class="titel">Lezte News</div>
 
     <div class="wrap_but">
-      <button type="button">click</button>
-      <p class="button_text">Sie können uns in Düsseldorf kontaktieren</p>
+      <button type="button"></button>
+      <p class="button_text">Sie können uns in Düsseldorf <br>
+      kontaktieren</p>
     </div>
     <div class="wrap_but">
-      <button type="button">click</button>
-      <p class="button_text">Sie können uns in Düsseldorf kontaktieren</p>
+      <button type="button"></button>
+      <p class="button_text">Sie können uns in Düsseldorf <br>
+      kontaktieren</p>
     </div>
     </div>
     <div class="footer__list__wrap">
@@ -61,6 +63,7 @@
   font-weight: 900;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 18px;
+  margin-bottom: 16px;
   &__text span{
 color: #076550;
   text-transform: uppercase;
@@ -68,12 +71,21 @@ color: #076550;
   font-size: 13px;
    font-weight: 900;
   }
+    &__text {
+      margin-bottom: 18px;
+    }
+    
+}
+address{
+  margin-bottom: 18px;
 }
 .footer__wr{
   background-color: #F4DEDF;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 60px;
+   padding-bottom: 60px;
 }
 .wrap__titl_but{
   display: flex;
@@ -89,5 +101,25 @@ color: #076550;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+}
+.titel{font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+
+display: flex;
+align-items: center;
+text-transform: uppercase;
+margin-bottom: 16px;
+color: #000000;
+}
+.wrap_but button{
+  background-color: #076550;
+  width: 48px;
+  height: 32px;
+  border-radius: 6px;
+  margin-right: 16px;
+}.wrap_but{
+  margin-bottom: 18px;
 }
 </style>
