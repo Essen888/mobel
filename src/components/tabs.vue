@@ -450,7 +450,7 @@ export default {
 
     &_li span {
       position: relative;
-
+ display: block;
       line-height: 1.9;
       width: 210px;
       background-color: #f4dedf00;
@@ -460,7 +460,7 @@ export default {
 
     &_li span::after {
       content: "";
-      display: block;
+     
       position: absolute;
       display: flex;
       margin-top: 5px;
@@ -473,15 +473,17 @@ export default {
     }
 
     &_li span {
-      padding: 6px;
+   
+       display: block;
+       width: 220px;
     }
 
     &_li span:hover {
-      display: block;
+      
       width: 220px;
       color: rgb(36, 35, 35);
       background-color: #f8f2f281;
-      padding: 6px;
+  
     }
   }
 }
