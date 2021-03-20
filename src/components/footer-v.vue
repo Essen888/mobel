@@ -93,7 +93,7 @@ address {
 .footer__wr {
   background-color: #f4dedf;
   display: flex;
-  justify-content: center;
+  justify-content:flex-end;
   align-items: flex-start;
  margin-right: -45px;
   margin-left: -45px;
@@ -163,6 +163,10 @@ address {
   margin-right: 45px;
   margin-left: 45px;
   width: calc( 25% - 45px);
+   display: flex;
+  justify-content:flex-end;
+  align-items: flex-start;
+  flex-direction: column;
 }
 @media (max-width: 988px) {
   .footer__wr {
