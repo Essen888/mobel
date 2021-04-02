@@ -3,7 +3,8 @@
     <nav class="nav">
       <ul class="nav__ul">
         <li
-          v-for="menuItem of menuItems"
+          v-for="(menuItem, index) of menuItems"
+          :key="index"
           @mouseover="menuItem.listener"
           class="nav__li"
         >
