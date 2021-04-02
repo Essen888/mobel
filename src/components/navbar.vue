@@ -3,109 +3,23 @@
     <nav class="nav">
       <ul class="nav__ul">
         <li
+          v-for="menuItem of menuItems"
+          @mouseover="menuItem.listener"
           class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
         >
           <dropdown
-            title="neu"
-            :items="neus"
+            v-if="menuItem.type === 'dropdown'"
+            :title="menuItem.title"
+            :items="menuItem.items"
+            :is-open="menuItem.isOpen"
+            @toggle="!menuItem.isOpen ? this.closeDropdowns() : null, menuItem.isOpen = !menuItem.isOpen"
             class="nav__menu-item"
-          />
-        </li>
-        <li
-          class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
-        >
-          <dropdown
-            title="Westwing Collection"
-            :items="Westwing__Collections"
-            class="nav__menu-item"
-          />
-        </li>
-        <li
-          class="nav__li "
-          @mouseover="(upHere = true), (upKids = false)"
-        >
+          ></dropdown>
+
           <a
-            href=""
+            v-else
             class="nav__menu-item"
-            @click.prevent
-          >Shop the Look</a>
-        </li>
-        <li
-          class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
-        >
-          <dropdown
-            title="Mobel"
-            :items="Mobel"
-            class="nav__menu-item"
-            :is-open="dropdownIsOpen"
-          />
-        </li>
-        <li
-          class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
-        >
-          <dropdown
-            title="Deko"
-            :items="Deko"
-            class="nav__menu-item"
-            :is-open="dropdownIsOpen"
-          />
-        </li>
-        <li
-          class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
-        >
-          <dropdown
-            title="Leuchten"
-            :items="Leuchten"
-            class="nav__menu-item"
-            :is-open="dropdownIsOpen"
-          />
-        </li>
-        <li
-          class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
-        >
-          <dropdown
-            title="Textilien & TeppicheShop the Look"
-            :items="TextilienTeppicheShoptheLook"
-            class="Textilien & TeppicheShop the Look"
-            :is-open="dropdownIsOpen"
-          />
-        </li>
-        <li
-          class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
-        >
-          <dropdown
-            title="Tisch & Bar"
-            :items="TischAndBar"
-            class="nav__menu-item"
-            :is-open="dropdownIsOpen"
-          />
-        </li>
-        <li
-          class="nav__li "
-          @mouseover="(upHere = false), (upKids = true)"
-        >
-          <a
-            href=""
-            class="nav__menu-item"
-            @click.prevent
-          >Kinderzimmer</a>
-        </li>
-        <li
-          class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
-        >
-          <a
-            href=""
-            class="nav__menu-item"
-            @click.prevent
-          >Gutscheine</a>
+          >{{ menuItem.title }}</a>
         </li>
       </ul>
     </nav>
@@ -145,16 +59,14 @@ export default {
   name: 'Navbar',
   components: {
     Dropdown,
-     SchopLook,
-    Kinderzimmer,
-   
+    SchopLook,
+    Kinderzimmer
   },
-  data: () => {
+  data() {
     return {
       upHere: false,
       dropdownIsOpen: false,
       upKids: false,
-      dropdownIsOpen: false,
 
       schopLooks: [
         {
@@ -191,6 +103,260 @@ export default {
           classes: ['cart__h']
         }
       ],
+
+      menuItems: [
+        {
+          title: 'neu',
+          type: 'dropdown',
+          isOpen: false,
+          items: [
+            {
+              title: 'Möbel',
+              link: '#'
+            },
+            {
+              title: 'Deko',
+              link: '#'
+            },
+            {
+              title: 'Leuchten',
+              link: '#'
+            },
+            {
+              title: 'Textilien & Teppiche',
+              link: '#'
+            },
+            {
+              title: 'Tisch & Bar',
+              link: '#'
+            },
+            {
+              title: 'Kinderzimmer',
+              link: '#'
+            }
+          ]
+        },
+        {
+          title: 'Westwing Collection',
+          type: 'dropdown',
+          isOpen: false,
+          items: [
+            {
+              title: 'Möbel',
+              link: '#'
+            },
+            {
+              title: 'Deko',
+              link: '#'
+            },
+            {
+              title: 'Leuchten',
+              link: '#'
+            },
+            {
+              title: 'Textilien & Teppiche',
+              link: '#'
+            },
+            {
+              title: 'Tisch & Bar',
+              link: '#'
+            },
+            {
+              title: 'Westwing Collection',
+              link: '#'
+            }
+          ]
+        },
+        {
+          title: 'Shop the Look',
+          type: 'link',
+          listener: () => {
+            this.closeDropdowns()
+
+            this.upKids = false
+            this.upHere = true
+          }
+        },
+        {
+          title: 'Mobel',
+          type: 'dropdown',
+          isOpen: false,
+          items: [
+            {
+              title: 'Möbel',
+              link: '#'
+            },
+            {
+              title: 'Deko',
+              link: '#'
+            },
+            {
+              title: 'Leuchten',
+              link: '#'
+            },
+            {
+              title: 'Textilien & Teppiche',
+              link: '#'
+            },
+            {
+              title: 'Tisch & Bar',
+              link: '#'
+            },
+            {
+              title: 'Westwing Collection',
+              link: '#'
+            }
+          ]
+        },
+        {
+          title: 'Deko',
+          type: 'dropdown',
+          isOpen: false,
+          items: [
+            {
+              title: 'Möbel',
+              link: '#'
+            },
+            {
+              title: 'Deko',
+              link: '#'
+            },
+            {
+              title: 'Leuchten',
+              link: '#'
+            },
+            {
+              title: 'Textilien & Teppiche',
+              link: '#'
+            },
+            {
+              title: 'Tisch & Bar',
+              link: '#'
+            },
+            {
+              title: 'Westwing Collection',
+              link: '#'
+            }
+          ]
+        },
+        {
+          title: 'Leuchten',
+          type: 'dropdown',
+          isOpen: false,
+          items: [
+            {
+              title: 'Möbel',
+              link: '#'
+            },
+            {
+              title: 'Deko',
+              link: '#'
+            },
+            {
+              title: 'Leuchten',
+              link: '#'
+            },
+            {
+              title: 'Textilien & Teppiche',
+              link: '#'
+            },
+            {
+              title: 'Tisch & Bar',
+              link: '#'
+            },
+            {
+              title: 'Westwing Collection',
+              link: '#'
+            }
+          ]
+        },
+        {
+          title: 'Textilien & TeppicheShop the Look',
+          type: 'dropdown',
+          isOpen: false,
+          items: [
+            {
+              title: 'Möbel',
+              link: '#'
+            },
+            {
+              title: 'Deko',
+              link: '#'
+            },
+            {
+              title: 'Leuchten',
+              link: '#'
+            },
+            {
+              title: 'Textilien & Teppiche',
+              link: '#'
+            },
+            {
+              title: 'Tisch & Bar',
+              link: '#'
+            },
+            {
+              title: 'Westwing Collection',
+              link: '#'
+            }
+          ]
+        },
+        {
+          title: 'Tisch & Bar',
+          type: 'dropdown',
+          isOpen: false,
+          items: [
+            {
+              title: 'Möbel',
+              link: '#'
+            },
+            {
+              title: 'Deko',
+              link: '#'
+            },
+            {
+              title: 'Leuchten',
+              link: '#'
+            },
+            {
+              title: 'Textilien & Teppiche',
+              link: '#'
+            },
+            {
+              title: 'Tisch & Bar',
+              link: '#'
+            },
+            {
+              title: 'Westwing Collection',
+              link: '#'
+            }
+          ]
+        },
+        {
+          title: 'Kinderzimmer',
+          type: 'link',
+          listener: () => {
+            this.closeDropdowns()
+
+            this.upHere = false
+            this.upKids = true
+          }
+        },
+        {
+          title: 'Gutscheine',
+          type: 'link'
+        }
+      ].map(item => {
+        if (!item.listener) {
+          item.listener = () => {
+            this.upHere = false
+            this.upKids = false
+          }
+        }
+
+        return item
+      }),
+
       neus: [
         {
           title: 'Möbel',
@@ -373,6 +539,15 @@ export default {
           link: '#'
         }
       ]
+    }
+  },
+  methods: {
+    closeDropdowns() {
+      this.menuItems.forEach(item => {
+        if (item.isOpen) {
+          item.isOpen = false
+        }
+      })
     }
   }
 }
