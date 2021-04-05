@@ -4,7 +4,7 @@
       <ul class="nav__ul">
         <li
           class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
+  
         >
           <dropdown
             title="neu"
@@ -15,6 +15,7 @@
         <li
           class="nav__li"
           @mouseover="(upHere = false), (upKids = false)"
+        
         >
           <dropdown
             title="Westwing Collection"
@@ -23,18 +24,25 @@
           />
         </li>
         <li
-          class="nav__li "
-          @mouseover="(upHere = true), (upKids = false)"
+          class="nav__li " 
+         
+           
+              @mouseover="(upHere = true), (upKids = false), (dropdownIsOpen = false)"
         >
+          
+        
           <a
             href=""
             class="nav__menu-item"
             @click.prevent
+             
           >Shop the Look</a>
+          
         </li>
         <li
           class="nav__li"
           @mouseover="(upHere = false), (upKids = false)"
+        
         >
           <dropdown
             title="Mobel"
@@ -46,6 +54,8 @@
         <li
           class="nav__li"
           @mouseover="(upHere = false), (upKids = false)"
+          
+          
         >
           <dropdown
             title="Deko"
@@ -89,7 +99,7 @@
         </li>
         <li
           class="nav__li "
-          @mouseover="(upHere = false), (upKids = true)"
+            @mouseover="(upHere = false), (upKids = true), (dropdownIsOpen = false)"
         >
           <a
             href=""
@@ -99,7 +109,7 @@
         </li>
         <li
           class="nav__li"
-          @mouseover="(upHere = false), (upKids = false)"
+          @mouseover="(upHere = false), (upKids = false),(dropdownIsOpen = false)"
         >
           <a
             href=""
@@ -113,18 +123,21 @@
       v-show="upHere"
       class="nav__produckt__cart"
       @click="upHere = false"
+      
     >
       <schop-look
         v-for="schopLook in schopLooks"
         :key="schopLook.article"
         :schopLookData="schopLook"
         :class="schopLook.classes"
+         @mouseover="(upHere = true), (upKids = false), (dropdownIsOpen = false)"
       />
     </div>
     <div
       v-show="upKids"
       class="nav__produckt__cart nav__produckt--cart"
       @click="upKids = false"
+    
     >
       <kinderzimmer
         v-for="kindCart in kindCarts"
@@ -147,6 +160,7 @@ export default {
     Dropdown,
      SchopLook,
     Kinderzimmer,
+  
    
   },
   data: () => {
@@ -155,7 +169,7 @@ export default {
       dropdownIsOpen: false,
       upKids: false,
       dropdownIsOpen: false,
-
+      ok:true,
       schopLooks: [
         {
           imag1: 'header-cart1.webp',

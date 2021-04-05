@@ -106,6 +106,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #181818;
+  // max-width:800px;
 }
 .header {
   width: 100vw;
