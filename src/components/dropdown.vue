@@ -1,9 +1,7 @@
 <template>
   <div
     class="nav__menu-item"
-    @click="isOpen = !isOpen"
-    @mouseleave="isOpen = !isOpen"
-
+    @click="$emit('toggle')"
   >
     <a href="#" >{{ title }}</a>
     <svg
@@ -43,7 +41,6 @@
 export default {
   name: 'Dropdown',
   props: ['title', 'items', 'isOpen']
-
 }
 </script>
 
