@@ -28,18 +28,21 @@
       v-show="upHere"
       class="nav__produckt__cart"
       @click="upHere = false"
+      
     >
       <schop-look
         v-for="schopLook in schopLooks"
         :key="schopLook.article"
         :schopLookData="schopLook"
         :class="schopLook.classes"
+         @mouseover="(upHere = true), (upKids = false), (dropdownIsOpen = false)"
       />
     </div>
     <div
       v-show="upKids"
       class="nav__produckt__cart nav__produckt--cart"
       @click="upKids = false"
+    
     >
       <kinderzimmer
         v-for="kindCart in kindCarts"
@@ -67,7 +70,6 @@ export default {
     return {
       upHere: false,
       upKids: false,
-
       schopLooks: [
         {
           imag1: 'header-cart1.webp',

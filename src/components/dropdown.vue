@@ -3,13 +3,14 @@
     class="nav__menu-item"
     @click="$emit('toggle')"
   >
-    <a href="#">{{ title }}</a>
+    <a href="#" >{{ title }}</a>
     <svg
       width="16"
       height="17"
       viewBox="0 0 16 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      
     >
       <path
         d="M3.5 5.93782L15.6244 5.93782L9.56218 16.4378L3.5 5.93782Z"

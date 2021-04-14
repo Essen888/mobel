@@ -9,7 +9,7 @@
           <a>West Collection</a>
         </li>
         <li class="nav__mob1__list1">
-          Shop the look
+          <a>Shop the look</a>
         </li>
         <li class="nav__mob1__list1">
           Mobel
